@@ -1,0 +1,102 @@
+<html ng-app="imageGallery">
+
+<head>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+   
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/angular.js"></script>
+    <script type="text/javascript" src="assets/js/isotop.js"></script> 
+    <script type="text/javascript" src="assets/js/dirPagination.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="assets/css/ngDialog.css">
+    <link rel="stylesheet" href="assets/css/ngDialog-theme-default.css">
+    <script type="text/javascript" src="assets/js/ngDialog.js"></script>
+    <script src="assets/js/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/underscore-min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+   
+    
+    <script type="text/javascript" src="./js/homeController.js"></script>
+    <script type="text/javascript" src="./js/gallery.js"></script>
+    <script type="text/javascript" src="./js/list.js"></script>
+    
+   
+    
+    
+    <!-- custom css style -->
+    <style type="text/css">
+         *, *:before, *:after {box-sizing:  border-box !important;}
+        .row {
+         -moz-column-width: 18em;
+         -webkit-column-width: 18em;
+         -moz-column-gap: 1em;
+         -webkit-column-gap:1em; 
+
+        }
+ 
+    </style>
+    <style type="text/css">
+    .progress-indicator {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        /* IE filter */
+        filter: progid: DXImageTransform.Microsoft.Alpha(opacity=50);
+        -moz-opacity: 0.5;
+        /* Mozilla extension */
+        -khtml-opacity: 0.5;
+        /* Safari/Conqueror extension */
+        opacity: 0.7;
+        /* CSS3 */
+        z-index: 2000;
+        background-color: #030303;
+        display: none;
+    }
+    
+    .progress-indicator img {
+        position: fixed;
+        top: 50%;
+        left: 40%;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .divalign {
+        float: right;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-shield"></i>Search in Google</a></li>
+                        <li><a href="#list"><i class="fa fa-shield"></i>Previous searches</a></li>
+                        <li><a href="#gallery"><i class="fa fa-shield"></i>Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="container">
+                <div id="main">
+                    <div ng-view></div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

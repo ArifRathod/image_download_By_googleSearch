@@ -1,0 +1,49 @@
+/*thead {
+    color: #ffffff;
+    background: linear-gradient(#2e6da4, #5bc0de);
+    background-color: initial;
+    padding: 15px;    
+}*/
+body {
+    font-family: 'Open Sans', sans-serif;;
+}
+.navbar-default .navbar-nav>li>a {
+    letter-spacing: 0.6px;
+    font-weight: 600;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+  background: #e7e7e7;
+  color: #555;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background: #E2E2E2;
+  font-weight: bold;
+}
+
+.table-curved {
+   border-collapse: separate;
+   border: solid #ddd 1px;
+   border-radius: 10px;
+   border-left: 0px;
+   border-top: 0px;
+}
+.table-curved > thead:first-child > tr:first-child > th {
+    border-bottom: 0px;
+    border-top: solid #ddd 1px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.table-curved > :first-child > :first-child > :first-child {
+    border-top-left-radius: 10px;
+}
+.table-curved > :first-child > :first-child > :last-child {
+    border-top-right-radius: 10px;
+}
+.table-curved > :last-child > :last-child > :first-child {
+    border-bottom-left-radius: 10px;
+}
+.table-curved > :last-child > :last-child > :last-child {
+    border-bottom-right-radius: 10px;
+}

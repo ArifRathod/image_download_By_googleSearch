@@ -1,0 +1,19 @@
+{
+  "name": "imagesearch",
+  "version": "1.0.0",
+  "description": "imagesearch",
+  "main": "app.js",
+  "scripts":{
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start":"node app.js"
+  },
+  "author": "Vivek <vivekthumar@gmail.com>",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "google-images": "^2.0.0",
+    "jimp": "^0.2.27",
+    "mongodb": "^2.1.7",
+    "q": "^1.4.1"
+  }
+}
